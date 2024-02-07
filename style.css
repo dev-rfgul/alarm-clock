@@ -1,0 +1,92 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.container h1{
+    margin-bottom: 35px ;
+}
+.clock-center{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+#clockContainer{
+    position: relative;
+    
+    height: 20vw;
+    width: 20vw;
+    background :url(images/clock.png.png) no-repeat;
+    background-size: 100%;
+    margin: auto;
+    margin-top: 65px;
+  
+}
+#hour, #minute, #second {
+    position: absolute; 
+    background: black;
+    border-radius: 10px ;
+    transform-origin: bottom;
+}
+#hour{
+    width: 2%;
+    height: 28%;
+    top: 21%;
+    left: 48.75%;
+    opacity: 0.9;
+    /* display: none; */
+}
+
+
+#minute{
+    height: 33%;
+    width: 1.5%;
+    top: 17%;
+    left: 48.95%;
+    opacity: 0.7;
+    /* display: none; */
+
+    
+}
+#second{
+    height: 38%;
+    width: 1%;
+    top: 12%;
+    left: 48%;
+    opacity: 0.7;
+    /* display: none; */
+
+}
+
+
+
+
+.whole-card{
+    margin: 19px 85px;
+    margin-left: 155px ;
+
+}
+
+.card {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center contents */
+    justify-content: center; /* Horizontally center contents */
+    padding: 20px; /* Add some padding for spacing */
+    /* border: 1px solid #ccc; Add a border for visualization */
+    box-shadow: 0 0 1rem blue;
+    min-width: 300px; /* Set a minimum width to prevent excessive shrinking */
+    flex-wrap: nowrap;
+}
+
+.card img {
+    max-width: 100%; /* Ensure the image doesn't exceed the card width */
+    height: auto; /* Maintain the image's aspect ratio */
+    margin-right: 10px; /* Add some spacing between image and text */
+}
+
+.card p {
+    margin: 0; /* Reset default margin for the paragraph */
+}
+
